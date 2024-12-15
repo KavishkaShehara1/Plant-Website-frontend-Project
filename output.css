@@ -675,6 +675,10 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mb-40{
+  margin-bottom: 10rem;
+}
+
 .flex{
   display: flex;
 }
@@ -1146,6 +1150,10 @@ h3{
 @media (min-width: 540px){
   .md\:mb-20{
     margin-bottom: 5rem;
+  }
+
+  .md\:mb-28{
+    margin-bottom: 7rem;
   }
 
   .md\:w-52{
