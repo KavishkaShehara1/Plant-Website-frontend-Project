@@ -29,3 +29,19 @@ h1 {
 .btn {
   @apply border border-yellow-500 bg-yellow-500 rounded-md px-5 py-2 duration-300;
 }
+
+.btn span {
+  @apply font-bold;
+}
+
+.btn:hover {
+  @apply opacity-90;
+}
+
+.btn_outline {
+  @apply bg-transparent;
+}
+
+.btn_outline:hover {
+  @apply bg-yellow-500;
+}
