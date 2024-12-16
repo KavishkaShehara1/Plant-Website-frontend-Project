@@ -31,7 +31,6 @@ const scrollup = () => {
 
 window.addEventListener("scroll", scrollup);
 
-
 /*---------------- CHANGE BACKGROUND HEADER ----------------*/
 const scrollHeader = () => {
   const header = document.getElementById("navbar");
@@ -52,28 +51,52 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 30,
   autoplay: {
     delay: 3000,
-    disableOnInteraction: false
+    disableOnInteraction: false,
   },
 
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
-    clickable: true
+    clickable: true,
   },
   grabCursor: true,
   breakpoints: {
     640: {
-      slidesPerView: 1
+      slidesPerView: 1,
     },
     768: {
-      slidesPerView: 2
+      slidesPerView: 2,
     },
     1024: {
-      slidesPerView: 3
+      slidesPerView: 3,
     },
-  }
+  },
 });
 
 /*---------------- SCROLL SECTION ACTIVE LINK ----------------*/
+const activeLink = () => {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  let current = "home";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+
+    if (this.scrollY >= sectionTop - 60) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((item) => {
+    item.classList.remove("active");
+
+    if (item.href.includes(current)) {
+      item.classList.add("active");
+    }
+  });
+};
+
+window.addEventListener("scroll", activeLink);
 
 /*---------------- SCROLL REVEAL ANIMATION ----------------*/

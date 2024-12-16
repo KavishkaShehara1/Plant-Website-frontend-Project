@@ -37,6 +37,11 @@ h3 {
   @apply text-yellow-500;
 }
 
+/* active */
+.active {
+  @apply text-yellow-500;
+}
+
 .title {
   @apply font-Lobster text-yellow-500;
 }
