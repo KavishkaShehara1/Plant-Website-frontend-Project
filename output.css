@@ -658,6 +658,10 @@ video {
   top: 50%;
 }
 
+.-left-12{
+  left: -3rem;
+}
+
 .-z-10{
   z-index: -10;
 }
@@ -679,6 +683,18 @@ video {
   margin-bottom: 10rem;
 }
 
+.ml-2{
+  margin-left: 0.5rem;
+}
+
+.ml-auto{
+  margin-left: auto;
+}
+
+.mb-20{
+  margin-bottom: 5rem;
+}
+
 .flex{
   display: flex;
 }
@@ -691,6 +707,10 @@ video {
   display: none;
 }
 
+.h-12{
+  height: 3rem;
+}
+
 .h-16{
   height: 4rem;
 }
@@ -701,6 +721,10 @@ video {
 
 .min-h-\[80vh\]{
   min-height: 80vh;
+}
+
+.w-12{
+  width: 3rem;
 }
 
 .w-32{
@@ -915,6 +939,10 @@ video {
   padding: 1.25rem;
 }
 
+.p-6{
+  padding: 1.5rem;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -923,6 +951,11 @@ video {
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .py-20{
@@ -952,6 +985,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
@@ -979,6 +1017,10 @@ video {
 
 .font-bold{
   font-weight: 700;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
 
 .italic{
@@ -1172,6 +1214,13 @@ h3{
 
 .popular_card:hover img{
   top: -2rem;
+}
+
+.swiper-pagination-bullet{
+  height: 0.75rem;
+  width: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:-translate-y-1:hover{
