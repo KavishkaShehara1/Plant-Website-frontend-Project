@@ -100,3 +100,29 @@ const activeLink = () => {
 window.addEventListener("scroll", activeLink);
 
 /*---------------- SCROLL REVEAL ANIMATION ----------------*/
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 300,
+  reset: true,
+});
+
+sr.reveal(
+  ".home_data, .about_top, .popular_top, .review_top, .review_swiper, .footer_icon, .footer_content, .copy_right"
+);
+sr.reveal(".home_image, .footer_news", { delay: 500, scale: 0.5 });
+
+sr.reveal(".service_card, .popular_card", { interval: 100 });
+
+sr.reveal(".about_leaf", { delay: 1000, origin: "right" });
+sr.reveal(".about_item_1-content, .about_item_2-img", {
+  delay: 1000,
+  origin: "right",
+});
+sr.reveal(".about_item_2-content, .about_item_1-img", {
+  delay: 1000,
+  origin: "left",
+});
+
+sr.reveal(".review_leaf, .footer_floral", { delay: 1000, origin: "left" });
