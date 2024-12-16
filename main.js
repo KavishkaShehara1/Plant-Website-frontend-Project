@@ -17,6 +17,20 @@ navLinks.forEach((link) => {
 });
 
 /*---------------- SHOW SCROLL UP ----------------*/
+const scrollup = () => {
+  const scrollupBtn = document.getElementById("scroll-up");
+
+  if (window.scrollY >= 250) {
+    scrollupBtn.classList.remove("-bottom-1/2");
+    scrollupBtn.classList.add("bottom-4");
+  } else {
+    scrollupBtn.classList.add("-bottom-1/2");
+    scrollupBtn.classList.remove("bottom-4");
+  }
+};
+
+window.addEventListener("scroll", scrollup);
+
 
 /*---------------- CHANGE BACKGROUND HEADER ----------------*/
 
